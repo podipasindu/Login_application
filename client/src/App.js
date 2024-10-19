@@ -9,6 +9,7 @@ import Recovery from './components/Recovery';
 import Profile from './components/Profile';
 import Reset from './components/Reset';
 import pageNotFound from './components/PageNotFound';
+import PageNotFound from './components/PageNotFound';
 
 
 /** root route */
@@ -16,12 +17,41 @@ import pageNotFound from './components/PageNotFound';
 const router = createBrowserRouter([
   { 
     path: '/',
-    element: <div>Root Router</div>
+    element: <Username></Username>
   },
   {
     path: '/register',
-    element: <div>register Router</div>
+    element: <Register></Register>
+  },
+  {
+    path: '/Password',
+    element: <Password></Password>
+  },
+  {
+    path: '/Profile',
+    element: <Profile></Profile>
+  },
+  {
+    path: '/Recovery',
+    element: <Recovery></Recovery>
+  },
+  {
+    path: '/Reset',
+    element: <Reset></Reset>
+  },
+  {
+    path: '*',
+    element: <PageNotFound></PageNotFound>
   }
+
+
+
+
+
+
+
+
+
 ]);
 
 export default function App() {

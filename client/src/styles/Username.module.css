@@ -1,0 +1,28 @@
+.glass {
+    background: rgba(255, 255, 255, 0.555);
+    border-radius: 12px; /* Reduced border radius */
+    box-shadow: 0 4px 20px rgba(71, 71, 71, 0.1); /* Reduced shadow for a subtle effect */
+    backdrop-filter: blur(5px); /* Reduced blur */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    /* Increased height and padding for the box */
+    @apply border-2 border-gray-50 shrink-0 h-auto min-h-[60%] w-[80%] sm:w-[60%] lg:w-[40%] xl:w-[30%] rounded-xl py-12 px-6;
+}
+
+.profile_img {
+    @apply border-4 border-gray-100 w-[135px] rounded-full shadow-lg;
+    @apply hover:border-gray-200;
+}
+
+.textbox {
+    @apply border-0 px-5 py-4 rounded-xl w-3/4 shadow-sm text-lg;
+    @apply focus:outline-none;
+}
+
+.btn {
+    @apply bg-indigo-500 w-3/4 py-4 rounded-lg text-gray-50 text-xl shadow-sm text-center;
+}
+
+.btn:hover {
+    background-color: #ff6a6a;
+}
